@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .register-container , .login-container{
+            width: 28%;
+            margin:50px auto;
+        }
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        span{
+            width: 123px;
+            display: inline-block;
+        }
+
+    </style>
+    
+    <div class="register-container" >
+        <h2>Register</h2>
+        <label for="email"><span>Email</span> 
+            <input id="register-email" type="email" name="email" > 
+        </label>
+        <label for="password"><span>Password</span> 
+            <input id="register-password" type="password" name="password" > 
+        </label>
+        <label for="c-password"><span>Confirm Password</span> 
+            <input id="register-confirm-password" type="password" name="c-password" >
+        </label>
+        <button id="register-btn" onclick="registerUser()">Register</button>
+        <a href="login.html">Login</a>
+    </div>
+
+    
+
+
+<script src="script.js"></script>
+</body>
+</html>

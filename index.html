@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .hide{
+            opacity: 0;
+        }
+        .visible{
+            opacity: 1 !important;
+        }
+    </style>
+    
+    <div id="user-dashboard">
+        <div style="margin-bottom: 30px;">Account No : <span id="acc-no"></span></div>
+        <div style="margin-bottom: 30px;" class="balance">Total Balance<div id="total-balance"></div></div>
+        <div class="transaction-history">Transaction History<div id="transaction-list"></div></div>
+    </div>
+    <button onclick="deleteAccount()">Delete Account</button>
+    <span id="ps" >Password<input id="deleteAccPass" type="password" name="DeletePass"></span>
+    <span id="cps" >Confirm Password<input id="deleteAccConfirmPass" type="password" name="DeleteConPass"></span>
+
+
+<script src="script.js"></script>
+</body>
+</html>
